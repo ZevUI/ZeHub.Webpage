@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ff5a00">
+  <meta name="description" content="ZeHub scripts, loaders and community.">
+  <title>ZeHub • Scripts</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home" aria-label="ZeHub home">
+      <img src="assets/logo.png" alt="ZeHub logo">
+      <span>ZeHub</span>
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#about">About</a>
+    </nav>
+
+    <a class="discord-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">
+      <span class="discord-dot"></span>
+      Discord
+    </a>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ZEHUB SCRIPT HUB</div>
+        <h1>Scripts built for<br><strong>your next game.</strong></h1>
+        <p>
+          Discover ZeHub scripts, grab the latest loadstring and join the
+          community for updates, support and releases.
+        </p>
+
+        <div class="hero-actions">
+          <a class="primary-btn" href="#scripts">Explore Scripts <span>→</span></a>
+          <a class="secondary-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">Join Discord</a>
+        </div>
+
+        <div class="hero-stats">
+          <div><strong id="scriptCount">3</strong><span>Scripts</span></div>
+          <div><strong>24/7</strong><span>Community</span></div>
+          <div><strong>Free</strong><span>Access</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="assets/banner.jpeg" alt="ZeHub banner">
+        <div class="art-overlay"></div>
+        <div class="floating-tag">BUILT BY ZEVRIC</div>
+      </div>
+    </section>
+
+    <section class="section" id="scripts">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span></span> LIBRARY</div>
+          <h2>Available <em>scripts</em></h2>
+          <p>Copy a loadstring with one tap. Add or update scripts from one simple file.</p>
+        </div>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search scripts..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="combat">Combat</button>
+        <button class="filter" data-filter="utility">Utility</button>
+        <button class="filter" data-filter="simulator">Simulator</button>
+      </div>
+
+      <div class="script-grid" id="scriptGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>No scripts matched your search.</div>
+    </section>
+
+    <section class="cta" id="about">
+      <div>
+        <div class="eyebrow"><span></span> THE COMMUNITY</div>
+        <h2>Updates live on Discord.</h2>
+        <p>Join ZeHub for script updates, announcements, support and new releases.</p>
+      </div>
+      <a class="primary-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">Join ZeHub <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand">
+      <img src="assets/logo.png" alt="">
+      <span>ZeHub</span>
+    </div>
+    <p>Built by Zevric • Script hub & community</p>
+    <a href="https://discord.gg/zehub" target="_blank" rel="noopener">discord.gg/zehub</a>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span class="toast-icon">✓</span>
+    <span id="toastText">Copied!</span>
+  </div>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
