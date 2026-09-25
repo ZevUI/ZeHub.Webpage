@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07101f">
+  <meta name="description" content="ZeHub — Roblox scripts, loaders, updates and community.">
+  <title>ZeHub • Script Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-grid"></div>
+  <div class="bg-glow glow-one"></div>
+  <div class="bg-glow glow-two"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="ZeHub logo">
+      <span>ZeHub</span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#scripts">Scripts</a>
+      <a href="#premium">Premium</a>
+      <a href="#updates">Updates</a>
+      <a href="#about">About</a>
+      <a href="https://discord.gg/zehub" target="_blank" rel="noopener">Discord</a>
+    </nav>
+
+    <a class="discord-btn desktop-discord" href="https://discord.gg/zehub" target="_blank" rel="noopener">
+      Discord <span>↗</span>
+    </a>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> ZEHUB SCRIPT HUB</div>
+        <h1>Scripts built for<br><strong>your next game.</strong></h1>
+        <p>Discover ZeHub scripts, copy the latest loadstring, get your key and join the community for updates and support.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#scripts">Explore Scripts <span>→</span></a>
+          <a class="secondary-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">Join Discord</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong id="scriptCount">3</strong><span>Scripts</span></div>
+          <div><strong>20+</strong><span>Features Each</span></div>
+          <div><strong>Free</strong><span>Access</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art">
+        <img src="assets/banner.jpeg" alt="ZeHub banner">
+        <div class="art-overlay"></div>
+        <div class="floating-tag">BUILT BY ZEVRIC</div>
+      </div>
+    </section>
+
+    <section class="section container" id="scripts">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow"><span></span> LIBRARY</div>
+          <h2>Available <em>scripts</em></h2>
+          <p>Choose a script, view its details and copy the loadstring instantly.</p>
+        </div>
+        <div class="search-wrap">
+          <span>⌕</span>
+          <input id="searchInput" type="search" placeholder="Search scripts..." autocomplete="off">
+        </div>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="combat">Combat</button>
+        <button class="filter" data-filter="utility">Utility</button>
+        <button class="filter" data-filter="simulator">Simulator</button>
+      </div>
+
+      <div class="script-grid" id="scriptGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>No scripts matched your search.</div>
+    </section>
+
+    <section class="key-banner container" id="get-key">
+      <div>
+        <div class="eyebrow"><span></span> ACCESS</div>
+        <h2>Need a key?</h2>
+        <p>Get your ZeHub key through FlowAuth, then return here and launch your script.</p>
+      </div>
+      <a class="primary-btn" href="https://flowauth.net/reward/95257bff957772ebbe918833738a8fea" target="_blank" rel="noopener">Get Key ↗</a>
+    </section>
+
+    <section class="section container" id="premium">
+      <div class="section-heading single">
+        <div>
+          <div class="eyebrow"><span></span> PREMIUM</div>
+          <h2>More access. <em>Less waiting.</em></h2>
+          <p>Premium keys provide access without the normal key flow plus additional ZeHub benefits.</p>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card">
+          <span class="price-label">WEEKLY</span>
+          <h3>$2.99</h3><p class="robux">400 Robux</p>
+          <a class="secondary-btn wide" href="#premium">Choose Weekly</a>
+        </article>
+        <article class="price-card">
+          <span class="price-label">MONTHLY</span>
+          <h3>$4.99</h3><p class="robux">800 Robux</p>
+          <a class="secondary-btn wide" href="#premium">Choose Monthly</a>
+        </article>
+        <article class="price-card featured">
+          <span class="price-label">LIFETIME</span>
+          <div class="old-price">$9.99</div>
+          <h3>$6.99</h3><p class="robux">1200 Robux</p>
+          <a class="primary-btn wide" href="https://discord.com/channels/1539039438976585900/1539039440041938957" target="_blank" rel="noopener">Purchase via Discord ↗</a>
+        </article>
+      </div>
+
+      <div class="benefits">
+        <div><b>✓</b> 24/7 script access without the key system</div>
+        <div><b>✓</b> More supported games</div>
+        <div><b>✓</b> Extra premium features</div>
+        <div><b>✓</b> Priority support</div>
+        <div><b>✓</b> First access to updates</div>
+        <div><b>✓</b> PayPal • CashApp • Crypto • Robux</div>
+      </div>
+    </section>
+
+    <section class="section container" id="updates">
+      <div class="section-heading single">
+        <div>
+          <div class="eyebrow"><span></span> CHANGELOG</div>
+          <h2>Latest <em>updates</em></h2>
+          <p>Recent ZeHub website and script changes.</p>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <article class="update-card">
+          <div class="update-version">v1.4</div>
+          <div><span class="update-date">September 25, 2026</span><h3>RIVALS compatibility update</h3>
+          <p>Improved RIVALS compatibility, updated the UI, fixed the loader and added new features.</p></div>
+        </article>
+        <article class="update-card">
+          <div class="update-version">v1.3</div>
+          <div><span class="update-date">September 20, 2026</span><h3>Runaways added</h3>
+          <p>Added Runaways support and improved the loader experience.</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+      <div class="about-card">
+        <div>
+          <div class="eyebrow"><span></span> ABOUT ZEHUB</div>
+          <h2>One simple place for ZeHub.</h2>
+          <p>ZeHub is an independent script hub created by Zevric, providing scripts, updates and tools through one simple platform.</p>
+        </div>
+        <a class="primary-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">Join Discord ↗</a>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <div>
+        <div class="eyebrow"><span></span> THE COMMUNITY</div>
+        <h2>Updates live on Discord.</h2>
+        <p>Join ZeHub for script updates, announcements, support and new releases.</p>
+      </div>
+      <a class="primary-btn" href="https://discord.gg/zehub" target="_blank" rel="noopener">Join ZeHub <span>→</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner container">
+      <div class="footer-brand"><img src="assets/logo.png" alt=""><span>ZeHub</span></div>
+      <p>Built by Zevric • Script hub & community</p>
+      <a href="https://discord.gg/zehub" target="_blank" rel="noopener">discord.gg/zehub</a>
+    </div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">
+    <span>✓</span><span id="toastText">Copied!</span>
+  </div>
+
+  <script src="js/scripts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
